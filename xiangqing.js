@@ -44,14 +44,25 @@ jian.onclick=function(){
 	}else{
 		num--;
 		shuliang.innerHTML=num;
+		if(num==1){
+			this.style.cursor="not-allowed";
+		}else{
+			jia.style.cursor="pointer";
+		}
 	}
 }
+
 jia.onclick=function(){
 	if(num==5){
 		this.style.cursor="not-allowed";
 	}else{
 		num++;
 		shuliang.innerHTML=num;
+		if(num==5){
+			this.style.cursor="not-allowed";
+		}else{
+			jian.style.cursor="pointer";
+		}
 	}
 }
 var insert=document.getElementById("insert");
